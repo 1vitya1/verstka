@@ -386,6 +386,23 @@ nav {
 
 
 @media(max-width: 769px) {
+    .copyright,
+    .privacy,
+    .terms {
+        display: inline-block;
+        min-width: 150px;
+        margin-right: 139px;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .terms {
+        margin-right: 0;
+    }
+
     .nav-link {
         margin: 0px 22px 0px 8px;
     }

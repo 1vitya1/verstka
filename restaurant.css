@@ -1,0 +1,265 @@
+.header-banner {
+    background: url('imgs/banner-icon.png') center no-repeat;
+    height: 364px;
+    position: relative;
+}
+
+.rest-info {
+    height: 204px;
+    width: 35%;
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+}
+
+.mobile-underline {
+    display: none;
+}
+
+.rest-name {
+    display: block;
+    width: 85%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 38px auto 54px auto;
+}
+
+.rest-cuisine {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    margin-left: 38px;
+    margin-right: 35px;
+    min-width: 172px;
+    color: #626262;
+}
+
+.cook-time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    display: inline-block;
+    width: 97px;
+    height: 32px;
+    background: #262626;
+    border-radius: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.banner-menu {
+    height: 80px;
+    position: relative;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    margin-bottom: 56px;
+}
+
+.menu-links {
+    margin-left: 80px;
+    position: absolute;
+    top: 42%;
+}
+
+.menu-link {
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #626262;
+    margin-right: 40px;
+}
+
+.restaurant-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content-header {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.cuisine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
+.cuisine-item {
+    background: rgba(117,117,117, 0.02);
+    min-width: 470px;
+    max-height: 160px;
+    display: flex;
+    flex-basis: 48%;
+    margin-bottom: 50px;
+}
+
+.cuisine-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: #1D1D1D;
+}
+
+.cuisine-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+    display: block;
+    margin-bottom: 58px;
+}
+
+.cuisine-cost {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-bottom: 16px;
+}
+
+.cuisine-item-icon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.item-info {
+    margin-left: 16px;
+    flex-basis: 67%;
+}
+
+.cuisine-image {
+    height: 160px;
+    flex-basis: 40%;
+}
+
+.timing {
+    display: block;
+    margin-top: 8px;
+}
+
+@media(max-width: 769px) {
+    .main {
+        background: rgba(117,117,117, 0.04);
+    }
+
+    .menu-links {
+        margin-left: 8px;
+    }
+
+    .restaurant-content {
+        width: 98%;
+    }
+
+    .cuisine-item {
+        flex-basis: 100%;
+        margin-bottom: 32px;
+    }
+
+    .cuisine-image {
+        flex-basis: 27%;
+    }
+
+    .item-info {
+        flex-basis: 71%;
+    }
+
+    .rest-info {
+        width: 57%;
+        left: 8%;
+    }
+}
+
+@media(max-width: 321px) {
+    .rest-info {
+        width: 94%;
+        left: 8px;
+        height: 180px;
+        bottom: -55px;
+    }
+
+    .rest-name {
+        font-size: 24px;
+        line-height: 28px;
+        width: 74%;
+        margin: 24px auto 40px auto;
+    }
+
+    .rest-cuisine {
+        margin-left: 86px;
+        margin-bottom: 16px;
+    }
+
+    .cook-time {
+        margin-left: 99px;
+    }
+
+    .cuisine-item {
+        margin-bottom: 8px;
+        flex-basis: 98%;
+    }
+
+    .banner-menu {
+        display: none;
+    }
+
+    .header-banner {
+        margin-bottom: 130px;
+        height: 255px;
+    }
+
+    .content-header {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 34px;
+        width: 83px;
+        margin: 0 auto 12px;
+    }
+
+    .mobile-underline {
+        display: block;
+        height: 2px;
+        background: rgba(117,117,117, 0.4);
+        margin-bottom: 43px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cuisine-image {
+        flex-basis: 22%;
+        height: 102px;
+    }
+
+    .item-info {
+        flex-basis: 43%;
+        margin-left: 8px;
+    }
+
+    .cuisine-name {
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 202px;
+        text-overflow: ellipsis;
+    }
+}
