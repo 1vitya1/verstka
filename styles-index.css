@@ -22,7 +22,7 @@ nav {
     height: 13px;
     display: inline-block;
     background: url(imgs/nav-link.svg) center no-repeat;
-    margin: 0 122px 0 81px;
+    margin: 0 118px 0 81px;
 }
 
 .asap-dilevery {
@@ -32,7 +32,7 @@ nav {
 .button-asap {
     width: 65px;
     height: 40px;
-    margin-right: 9px;
+    margin-right: 5px;
     background-color: #ffffff;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
@@ -44,8 +44,8 @@ nav {
     background: url(imgs/location.svg) 12px 10px no-repeat;
     padding-left: 36px;
     height: 40px;
-    margin-left: 9px;
-    margin-right: 74px;
+    margin-left: 3px;
+    margin-right: 88px;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 2px;
@@ -62,11 +62,11 @@ nav {
 }
 
 .sign-in {
-    margin-right: 16px;
+    margin-right: 13px;
 }
 
 .register {
-    margin-right: 27px;
+    margin-right: 24px;
     color: #ffffff;
     background: #262626;
     border: 1px solid;
@@ -86,7 +86,7 @@ nav {
 
 .search:after {
     display: block;
-    margin-top: 15px;
+    margin-top: 11px;
     content: '';
     height: 1px;
     background: #757575;
@@ -133,6 +133,7 @@ nav {
 
 .content-item {
     margin-bottom: 15px;
+    flex-basis: 33%;
 }
 
 .item-description {
@@ -175,10 +176,6 @@ nav {
     padding-bottom: 20px;
 }
 
-.col-4 {
-    flex-basis: 31.33333%;
-}
-
 .footer {
     background: #262626;
     width: 100%;
@@ -197,7 +194,7 @@ nav {
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.4;
-    margin-top: 40px;
+    margin-top: 36px;
     display: block;
 }
 
@@ -206,7 +203,7 @@ nav {
 .info-right {
     display: table-cell;
     min-width: 224px;
-    padding-right: 90px;
+    padding-right: 98px;
     color: #ffffff;
 }
 
@@ -230,7 +227,7 @@ nav {
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.4;
-    margin-top: 40px;
+    margin-top: 22px;
     display: block;
 }
 
@@ -246,7 +243,7 @@ nav {
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.4;
-    margin-top: 40px;
+    margin-top: 37px;
     display: block;
 }
 
@@ -255,8 +252,8 @@ nav {
     width: 80px;
     height: 80px;
     position: absolute;
-    bottom: 24px;
-    right: 16px;
+    bottom: 30px;
+    right: 4px;
 }
 
 .app-apple {
@@ -446,6 +443,11 @@ nav {
     .footer-copyrights {
         width: 98%;
     }
+
+    .button-up {
+        bottom: 155px;
+        right: 17px;
+    }
 }
 
 @media(max-width: 321px) {
@@ -467,15 +469,16 @@ nav {
     }
 
     .sign-in {
-        margin-right: 6px;
+        margin-right: 10px;
     }
 
     .nav-link {
-        margin: 0px 19px 0px 8px;
+        margin: 0px 30px 0px 8px;
     }
 
     .search {
         margin: 0 auto 24px auto;
+        width: 97%;
     }
 
     .search input {
@@ -521,20 +524,21 @@ nav {
     }
 
     .dilevery-hidden {
-        display: table;
+        display: block;
         margin-bottom: 40px;
         width: 98%;
         margin-left: 6px;
     }
 
     .hidden-when {
-        width: 20%;
-        display: table-cell;
+        width: 21%;
+        display: inline-block;
+        margin-right: 14px;
     }
 
     .hidden-to {
-        width: 50%;
-        display: table-cell;
+        width: 72%;
+        display: inline-block;
     }
 
     .when,
@@ -569,5 +573,20 @@ nav {
         text-align: right;
         vertical-align: middle;
         background: url('imgs/location.svg') 8px 10px no-repeat;
+        padding-right: 5px;
+    }
+
+    .footer-logo,
+    .footer-info,
+    .footer-apps,
+    .footer-copyrights {
+        width: 97%;
+    }
+
+    .button-up {
+        bottom: 21px;
+        right: 9px;
+        width: 64px;
+        height: 64px;
     }
 }
